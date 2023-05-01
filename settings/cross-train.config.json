@@ -1,0 +1,26 @@
+{
+  "infochatbot.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "Help": "",
+      "Address": "",
+      "Phone": "",
+      "Contact": "",
+      "Gallery": "",
+      "General": "",
+      "Mood": "",
+      "Hours": "",
+      "Social": "",
+      "Services": "",
+      "Haircuts": "",
+      "Shaves": "",
+      "Beard": "",
+      "Mustache": "",
+      "Mail": "",
+      "Greetings": "",
+      "Thanks": "",
+      "Bye": "",
+      "Sorry": ""
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_infochatbot",
+  "recognizers": {
+    "en-us": "infochatbot.en-us.lu",
+    "": "infochatbot.en-us.lu"
+  }
+}

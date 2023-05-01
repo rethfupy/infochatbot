@@ -1,0 +1,6 @@
+# files generated during the lubuild process
+generated/
+**/logs
+**/logs/debug.log
+*.log
+logs/

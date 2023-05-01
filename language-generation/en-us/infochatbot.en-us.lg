@@ -1,0 +1,147 @@
+[import](common.lg)
+
+# SendActivity_266608()
+- Welcome. How can I help you today?
+
+# SendActivity_771838()
+- I'm here to help! I can provide information about our barbershop as well as our services. Ask what interests you ;)
+# SendActivity_hl4gml()
+[Activity
+    Text = ${SendActivity_hl4gml_text()}
+]
+
+# SendActivity_hl4gml_text()
+- Peterburi tee 2, 11415, Tallinn
+- Peterburi tee 2, Tallinn
+# SendActivity_V849gA()
+[Activity
+    Text = ${SendActivity_V849gA_text()}
+]
+
+# SendActivity_V849gA_text()
+- Sorry, I didn't get that.
+# SendActivity_dZ0jfp()
+[Activity
+    Text = ${SendActivity_dZ0jfp_text()}
+]
+
+# SendActivity_dZ0jfp_text()
+- +372 606 0455
+# SendActivity_C4vY6y()
+[Activity
+    Text = ${SendActivity_C4vY6y_text()}
+]
+
+# SendActivity_C4vY6y_text()
+- You can find our contact's details and send a message to us here: https://deluxedepot.eu/contact/
+- You can see our contact's information here: https://deluxedepot.eu/contact/
+# SendActivity_187yWd()
+[Activity
+    Text = ${SendActivity_187yWd_text()}
+]
+
+# SendActivity_187yWd_text()
+- You can see our work on the gallery page
+- You can see our gallery here: https://deluxedepot.eu/gallery/
+# SendActivity_225Jah()
+[Activity
+    Text = ${SendActivity_225Jah_text()}
+]
+
+# SendActivity_225Jah_text()
+- On our website you can get acquainted with the barbershop services that we provide :)
+- On the DeluxeDepot website you can get acquainted with the haircut services that we offer. You can find here information about the cost of services, our location, as well as contact us to book an appointment
+# SendActivity_BGQRiO()
+[Activity
+    Text = ${SendActivity_BGQRiO_text()}
+]
+
+# SendActivity_BGQRiO_text()
+- I'm fine, thank you! How can I help you? :)
+- I'm fine, thank you! How can I assist you today?
+# SendActivity_ex2OmT()
+[Activity
+    Text = ${SendActivity_ex2OmT_text()}
+]
+
+# SendActivity_ex2OmT_text()
+- We are working from Monday till Friday (9:00 - 17:00) and on Saturday (11:00 - 15:00)
+# SendActivity_o5oKJq()
+[Activity
+    Text = ${SendActivity_o5oKJq_text()}
+]
+
+# SendActivity_o5oKJq_text()
+- Find us on Facebook and Twitter!
+# SendActivity_HJXb3h()
+[Activity
+    Text = ${SendActivity_HJXb3h_text()}
+    SuggestedActions = Haircuts | Shaves | Beard Trim | Mustache Trim
+]
+
+# SendActivity_HJXb3h_text()
+- We offer the following types of services: Haircuts, Shaves, Beard Trim and Mustache Trim. What are you interested in?
+# SendActivity_GLcxCB()
+[Activity
+    Text = ${SendActivity_GLcxCB_text()}
+]
+
+# SendActivity_GLcxCB_text()
+- We offer the following mustache trim options: Mustache Trim, Mustache Lipsum and Mustache Erat. You can find additional information here: https://deluxedepot.eu/about/
+# SendActivity_zzveFu()
+[Activity
+    Text = ${SendActivity_zzveFu_text()}
+]
+
+# SendActivity_zzveFu_text()
+- We offer the following beard trim options: Proin Beard Trim and Beard Trim Mauris. You can find additional information here: https://deluxedepot.eu/about/
+# SendActivity_VEe6yO()
+[Activity
+    Text = ${SendActivity_VEe6yO_text()}
+]
+
+# SendActivity_VEe6yO_text()
+- We offer the following shaves options: Shave Consequat, Vulputate Shave and Shave Accumsan. You can find additional information here: https://deluxedepot.eu/about/
+# SendActivity_cz1RRG()
+[Activity
+    Text = ${SendActivity_cz1RRG_text()}
+]
+
+# SendActivity_cz1RRG_text()
+- We offer the following haircut options: Lorem Sit Haircut, Haircut Cillum, Bibendum Haircut, Haircut Amet. You can find additional information here: https://deluxedepot.eu/about/
+# SendActivity_XbufRc()
+[Activity
+    Text = ${SendActivity_XbufRc_text()}
+]
+
+# SendActivity_XbufRc_text()
+- Our email is info@deluxedepot.eu
+- info@deluxedepot.eu
+# SendActivity_5ewWy0()
+[Activity
+    Text = ${SendActivity_5ewWy0_text()}
+]
+
+# SendActivity_5ewWy0_text()
+- How can I help you?
+# SendActivity_n9CMuE()
+[Activity
+    Text = ${SendActivity_n9CMuE_text()}
+]
+
+# SendActivity_n9CMuE_text()
+- My regards ;)
+# SendActivity_lYpnzc()
+[Activity
+    Text = ${SendActivity_lYpnzc_text()}
+]
+
+# SendActivity_lYpnzc_text()
+- I was glad to chat with you! Have a nice day
+# SendActivity_Eouq3E()
+[Activity
+    Text = ${SendActivity_Eouq3E_text()}
+]
+
+# SendActivity_Eouq3E_text()
+- I apologize for the misunderstanding. Please reformulate your question

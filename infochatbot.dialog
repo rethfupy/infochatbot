@@ -1,0 +1,400 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "$designer": {
+      "name": "infochatbot",
+      "description": "",
+      "id": "qBJGPd"
+    }
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "recognizer": "infochatbot.lu.qna",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "$designer": {
+        "id": "376720",
+        "name": "Welcome message"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "518944",
+            "name": "Loop: for each item"
+          },
+          "itemsProperty": "turn.Activity.membersAdded",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "641773",
+                "name": "Branch: if/else"
+              },
+              "condition": "string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "266608",
+                    "name": "Send a response"
+                  },
+                  "activity": "${SendActivity_266608()}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "242409"
+      },
+      "condition": "#Help.Score >= 0.6",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "771838",
+            "name": "Send a response"
+          },
+          "activity": "${SendActivity_771838()}"
+        }
+      ],
+      "intent": "Help"
+    },
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "777383"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "V849gA"
+          },
+          "activity": "${SendActivity_V849gA()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "QNU519",
+        "name": "Address"
+      },
+      "intent": "Address",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "hl4gml"
+          },
+          "activity": "${SendActivity_hl4gml()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "HHMmSo",
+        "name": "Phone"
+      },
+      "intent": "Phone",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "dZ0jfp"
+          },
+          "activity": "${SendActivity_dZ0jfp()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "gDE1X0",
+        "name": "Contact"
+      },
+      "intent": "Contact",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "C4vY6y"
+          },
+          "activity": "${SendActivity_C4vY6y()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "9VRSbL",
+        "name": "Gallery"
+      },
+      "intent": "Gallery",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "187yWd"
+          },
+          "activity": "${SendActivity_187yWd()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "3FZExn",
+        "name": "General"
+      },
+      "intent": "General",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "225Jah"
+          },
+          "activity": "${SendActivity_225Jah()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "8fjc5n",
+        "name": "Mood"
+      },
+      "intent": "Mood",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "BGQRiO"
+          },
+          "activity": "${SendActivity_BGQRiO()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "ZUgnJc",
+        "name": "Hours"
+      },
+      "intent": "Hours",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "ex2OmT"
+          },
+          "activity": "${SendActivity_ex2OmT()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "TVppoG",
+        "name": "Social"
+      },
+      "intent": "Social",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "o5oKJq"
+          },
+          "activity": "${SendActivity_o5oKJq()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "101Quk",
+        "name": "Services"
+      },
+      "intent": "Services",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "HJXb3h"
+          },
+          "activity": "${SendActivity_HJXb3h()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "UtWYOI",
+        "name": "Haircuts"
+      },
+      "intent": "Haircuts",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "cz1RRG"
+          },
+          "activity": "${SendActivity_cz1RRG()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "LJ7U8K",
+        "name": "Shaves"
+      },
+      "intent": "Shaves",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "VEe6yO"
+          },
+          "activity": "${SendActivity_VEe6yO()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "jKPGsQ",
+        "name": "Beard"
+      },
+      "intent": "Beard",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "zzveFu"
+          },
+          "activity": "${SendActivity_zzveFu()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "EH2lMl",
+        "name": "Mustache"
+      },
+      "intent": "Mustache",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "GLcxCB"
+          },
+          "activity": "${SendActivity_GLcxCB()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "DqkbKY",
+        "name": "Mail"
+      },
+      "intent": "Mail",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "XbufRc"
+          },
+          "activity": "${SendActivity_XbufRc()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "JtoW2f",
+        "name": "Greetings"
+      },
+      "intent": "Greetings",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "5ewWy0"
+          },
+          "activity": "${SendActivity_5ewWy0()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "AgGVkh",
+        "name": "Thanks"
+      },
+      "intent": "Thanks",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "n9CMuE"
+          },
+          "activity": "${SendActivity_n9CMuE()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "T8gxez",
+        "name": "Bye"
+      },
+      "intent": "Bye",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "lYpnzc"
+          },
+          "activity": "${SendActivity_lYpnzc()}"
+        },
+        {
+          "$kind": "Microsoft.EndTurn",
+          "$designer": {
+            "id": "a863ut"
+          }
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "IQYSam",
+        "name": "Sorry"
+      },
+      "intent": "Sorry",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Eouq3E"
+          },
+          "activity": "${SendActivity_Eouq3E()}"
+        }
+      ]
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",
+  "generator": "infochatbot.lg",
+  "id": "infochatbot"
+}
